@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gêmeo Digital • Simulador de Controle de Energias Perigosas (LOTO)</title>
+  <link rel="icon" href="data:," />
+  <script type="module" crossorigin src="./assets/index-CQqsa_mW.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-xfKxOCf4.css">
+</head>
+<body data-mode="free">
+  <div id="app"></div>
+  <div id="pins"></div>
+  <div id="flash"></div>
+
+  <header id="topbar" class="glass">
+    <div class="brand"><span class="logo">LOTO</span><div><b>Gêmeo Digital</b><small>Simulador de Controle de Energias Perigosas</small></div></div>
+    <nav id="modes"></nav>
+    <button id="btn-demo" class="demo-btn" title="Assista ao procedimento completo de bloqueio">▶ Demonstração</button>
+    <div class="stats">
+      <div><small>Tempo</small><b id="timer">—</b></div>
+      <div><small>Pontuação</small><b id="score">—</b></div>
+      <div id="alarm" title="Giroflex / sirene">🚨</div>
+      <button id="btn-panels" title="Mostrar/ocultar painéis (H)">👁</button>
+      <button id="btn-mute" title="Som (M)">🔊</button>
+      <input id="vol" type="range" min="0" max="100" value="25" title="Volume" />
+    </div>
+  </header>
+
+  <aside id="left" class="glass">
+    <h3>Procedimento LOTO</h3>
+    <ol id="steps"></ol>
+    <div class="row">
+      <button id="btn-prep" class="primary">⚙️ Preparar simulador</button>
+      <button id="btn-reset">↺ Reiniciar</button>
+    </div>
+    <label class="owner">Responsável pelo bloqueio <input id="owner" placeholder="Colaborador" maxlength="24" /></label>
+  </aside>
+
+  <aside id="right" class="glass">
+    <h3>Fontes de energia <span id="power">Desligado</span></h3>
+    <div id="energies"></div>
+    <p id="comp"></p>
+  </aside>
+
+  <footer id="cams" class="glass"></footer>
+
+  <section id="demo" class="glass">
+    <div class="demo-head"><span id="demo-step">Demonstração</span><div class="demo-ctl"><button id="demo-voice" title="Liga/desliga a narração">🗣️ Voz ligada</button><button id="demo-pause">⏸ Pausar</button><button id="demo-stop">■ Encerrar</button></div></div>
+    <h2 id="demo-title"></h2>
+    <p id="demo-text"></p>
+    <div class="demo-foot"><div id="demo-en"></div><div class="demo-prog"><i id="demo-bar"></i></div></div>
+  </section>
+
+  <div id="tooltip"></div>
+  <div id="ctxmenu" class="glass"></div>
+  <div id="toasts"></div>
+
+  <div id="result"><div class="card glass"><h2>Resultado da atividade</h2><div id="result-body"></div><button id="result-close" class="primary">Fechar</button></div></div>
+
+  <div id="intro" class="show"><div class="card glass">
+    <div class="tag">GÊMEO DIGITAL • NR-10 / NR-12 • LOTO</div>
+    <h1>Simulador de Controle de Energias Perigosas</h1>
+    <p class="lead">Estação de treinamento Lockout/Tagout com 8 fontes de energia: química Q1, hidráulica H1, pneumática P1, térmica T1 e elétricas E1–E4. Identifique, desligue, isole, bloqueie, drene e comprove o <b>estado de energia zero</b> antes de acessar a Zona de Risco – e depois devolva o equipamento à operação com segurança.</p>
+    <div class="modes3">
+      <button data-demo class="demo-card"><b>▶ Demonstração</b><span>Assista ao bloqueio completo, passo a passo, antes de praticar.</span></button>
+      <button data-start="guided"><b>🎓 Treinamento guiado</b><span>Passo a passo, dicas e sinaleiros LED ligados.</span></button>
+      <button data-start="exam"><b>📝 Avaliação</b><span>Sinaleiros desligados, sem dicas, com pontuação e relatório.</span></button>
+      <button data-start="free"><b>🧭 Exploração livre</b><span>Opere tudo livremente e observe a física do sistema.</span></button>
+    </div>
+    <div class="specs"><span>1160 × 640 × 1650 mm</span><span>60 kg</span><span>127/220 V • 2P+T 10 A</span><span>Pontos de bloqueio 12 VDC</span><span>Ar comprimido 4 kgf/cm²</span></div>
+    <p class="hint">Clique nos componentes para operar • arraste para orbitar • role para aproximar • teclas 1–8 trocam a câmera</p>
+  </div></div>
+
+  <div id="loader"><div class="ring"></div><p>Montando o gêmeo digital…</p></div>
+</body>
+</html>
